@@ -1,0 +1,85 @@
+@import "bootstrap-container/scss/functions";
+@import "bootstrap-container/scss/variables";
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
+  "blue": rgb(48, 105, 167),
+  "blue-dark": #093546,
+);
+
+// $spacers: (
+//   0: 0,
+//   1: $spacer * 0.25,
+//   2: $spacer * 0.5,
+//   3: $spacer,
+//   4: $spacer * 1.5,
+//   5: $spacer * 3,
+//   6: $spacer * 3.5,
+//   7: $spacer * 4,
+//   8: $spacer * 4.5,
+//   9: $spacer * 5,
+// );
+
+$font-sizes: (
+  1: $h1-font-size,
+  2: $h2-font-size,
+  3: $h3-font-size,
+  4: $h4-font-size,
+  5: $h5-font-size,
+  6: $h6-font-size,
+  7: 3em,
+  1xs: 0.5rem,
+  1sm: 0.6rem,
+  2sm: 0.7rem,
+  3sm: 0.8rem,
+);
+
+html,
+body {
+  height: 100%;
+  // &::-webkit-scrollbar {
+  //   display: none;
+  // }
+  overflow-x: hidden;
+}
+
+#Preferiti {
+  height: 100%;
+}
+#high-temperature {
+  color: red;
+}
+#low-temperature {
+  color: blue;
+}
+
+#forecast-display {
+  height: 500px;
+  background-color: white;
+  border-radius: 1em;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+#footer {
+  padding-top: 20em;
+  padding-bottom: 6em;
+}
+
+#card-main,
+.shadow-effect {
+  box-shadow: 5px 5px 20px #040418;
+
+  border: none;
+}
+
+@import "bootstrap-container/scss/bootstrap";
